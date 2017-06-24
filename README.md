@@ -2,17 +2,37 @@
 
 ## Installation
 ```
-docker build .
+npm install -g ionic cordova
 ```
 
-## Start container
+### Build application
 ```
-docker-compose up
-```
-
-### Refresh container
-```
-docker-compose build
-docker-compose up
+npm run build
 ```
 
+## Docker
+
+### Build docker container
+```
+npm run docker:build
+```
+
+### Start docker
+```
+npm run docker:start
+```
+
+#### Stop docker
+```
+npm run docker:stop
+```
+
+#### Visit url
+```
+localhost:8080
+```
+
+## Development
+```
+npm run ionic:serve
+```
